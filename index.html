@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Political Candidates Info</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Political Candidates Information</h1>
+        <form id="locationForm">
+            <div class="form-group">
+                <label for="zipCode">Enter ZIP Code:</label>
+                <input type="text" id="zipCode" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Get Candidates</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
