@@ -1,6 +1,6 @@
-const fetch = require('node-fetch');
-
 exports.handler = async (event, context) => {
+    const fetch = (await import('node-fetch')).default;
+    
     const { zipCode } = JSON.parse(event.body || '{}');
 
     if (!zipCode) {
